@@ -11,7 +11,7 @@ import {
   NEW_MESSAGE,
   NEW_MESSAGE_ALERT,
   ONLINE,
-} from "../Server/constants/events.js";
+} from "./constants/events.js";
 import { errorMiddleware } from "./middelwares/error.js";
 import { Message } from "./models/message.js";
 import chatRoute from "./routes/chat.js";
@@ -22,7 +22,7 @@ import {
   CHAT_JOINED,
   START_TYPING,
   STOP_TYPING,
-} from "../Server/constants/events.js";
+} from "./constants/events.js";
 
 dotenv.config({
     path: "./.env",
