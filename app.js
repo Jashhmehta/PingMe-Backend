@@ -40,7 +40,7 @@ cloudinary.config({
 });
 
 const corsOptions = {
-  origin: ["http://localhost:3000", "https://pingme-chi.vercel.app"],
+  origin: ["http://localhost:5173", "https://pingme-frontend-z7gx.vercel.app/"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
 };
