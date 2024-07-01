@@ -7,6 +7,7 @@ export const corsOptions = {
       "http://localhost:5173",
       "http://localhost:3000",
       "https://pingme-frontend-z7gx.vercel.app",
+      "https://pinggme.vercel.app"
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
