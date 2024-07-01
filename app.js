@@ -12,6 +12,7 @@ import {
   NEW_MESSAGE_ALERT,
   ONLINE,
 } from "./constants/events.js";
+import {corsOptions} from "./constants/config.js"
 import { errorMiddleware } from "./middelwares/error.js";
 import { Message } from "./models/message.js";
 import chatRoute from "./routes/chat.js";
@@ -30,7 +31,7 @@ dotenv.config({
   
 
 const mongoURI = process.env.MONGO_URI;
-
+console.log("*****8", mongoURI)
 connectDB(mongoURI);
 
 cloudinary.config({
@@ -39,11 +40,7 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-const corsOptions = {
-  origin: ["http://localhost:3000", "https://pingme-chi.vercel.app"],
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true,
-};
+
 
 const app = express();
 const server = createServer(app);
