@@ -31,7 +31,6 @@ dotenv.config({
   
 
 const mongoURI = process.env.MONGO_URI;
-console.log("*****8", mongoURI)
 connectDB(mongoURI);
 
 cloudinary.config({
@@ -39,6 +38,8 @@ cloudinary.config({
   api_key: process.env.CLOUDINARY_API_KEY,
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
+
+
 
 
 
